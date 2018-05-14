@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:scaleType="centerInside"
+    android:adjustViewBounds="true"
+    android:layout_weight=".4"
+    android:layout_gravity="center"
+    android:paddingTop="10dp"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/whoops"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="-10dp"
+        android:textColor="#eee"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/no_internet_connection"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="10dp"
+        android:textColor="#ddd"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_check_your_connection"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#ddd"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/try_again"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:onClick="onTryAgainButtonClick"
+        android:background="@color/colorAccent"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        />
+</LinearLayout>

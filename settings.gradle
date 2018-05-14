@@ -1,0 +1,2 @@
+include ':app', ':webUtils'
+project(':webUtils').projectDir = new File('_webUtils')
